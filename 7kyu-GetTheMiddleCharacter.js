@@ -38,4 +38,8 @@ function getMiddle(s) {
   return s.substring(position, position + length)
 }
 
-
+// Solution 4
+function getMiddle(s)
+{
+  return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
+}
