@@ -1,10 +1,11 @@
 /**
- * Count the Divisors of a Number
+ * Tuesday 1/21/2020
+ * Count the Divisors of a Number 
  * https://www.codewars.com/kata/542c0f198e077084c0000c2e
  */
+// Solution 1
 function getDivisorsCnt(n){
-  // keeps count of the amount of divisors 
-  let divisor = 0;
+  let divisor = 0;     // keeps count of the amount of divisors 
   
   for(let i = 0; i <= n; i++){
     /**
@@ -22,8 +23,8 @@ function getDivisorsCnt(n){
     // console.log(elevenStr == elevenNum) this will return true
     // console.log(elevenStr === elevenNum) this will return false 
     
-    if(n % i === 0){
-      divisor = divisor + 1; // other ways to write this line: divisor += 1 or divisor++
+    if(n % i === 0){          // checks if i is a divisor of n
+      divisor = divisor + 1;  // other ways to write this line: divisor += 1 or divisor++
     } 
   }
 
