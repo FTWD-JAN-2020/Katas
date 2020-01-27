@@ -30,3 +30,16 @@ function getCount(str) {
     return 0;
   // return count ? count.length : 0;
 }
+
+// Solution 3
+function getCount(str) {
+  let arr = str.split('');
+  let filteredArr = arr.filter(character => {
+    return "aeiouAEIOU".includes(character);
+  })
+
+  return filteredArr.length;
+
+  // short version
+  // return str.split('').filter(character => "aeiouAEIOU".includes(character)).length;
+ }
