@@ -43,3 +43,26 @@ function getCount(str) {
   // short version
   // return str.split('').filter(character => "aeiouAEIOU".includes(character)).length;
  }
+
+ // Solution 4
+ function getCount(str) {
+  let vowelCount = 0;
+  let vowelList = "aeiou";
+  
+  for(let i = 0; i< str.length; i++){
+    if(vowelList.indexOf(str[i]) !== -1)
+      vowelCount++;
+  }
+  return vowelCount;  
+ }
+
+ // Solution 5
+ function getCount(str) {
+  let vowelCount = 0;
+  
+  for(let i = 0; i < str.length; i++){
+    if(str[i] == 'a'|| str[i] == 'e' || str[i] == 'i' || str[i] == 'o'|| str[i] == 'u' ){
+      vowelCount+=1}}
+  
+  return vowelCount;  
+ }
